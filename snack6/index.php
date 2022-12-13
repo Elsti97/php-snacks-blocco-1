@@ -44,9 +44,38 @@ $db = [
 
 <body>
   <header>
-    <!-- place navbar here -->
   </header>
   <main>
+    <div class="container my-2 text-center">
+      <?php
+      for ($i = 0; $i < count($db['teachers']); $i++) {
+        $teacher = $db['teachers'][$i];
+      ?>
+        <div class="bg-light p-3">
+          <?php
+          echo "{$teacher['name']} {$teacher['lastname']}"
+          ?>
+        </div>
+      <?php
+      }
+      ?>
+    </div>
+
+    <div class="container text-center">
+      <?php
+      for ($i = 0; $i < count($db['pm']); $i++) {
+        $pm = $db['pm'][$i];
+      ?>
+        <div class="bg-danger p-3">
+          <?php
+          echo "{$pm['name']} {$teacher['lastname']}"
+          ?>
+        </div>
+      <?php
+      }
+      ?>
+    </div>
+
 
   </main>
   <footer>
