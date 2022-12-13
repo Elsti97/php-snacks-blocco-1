@@ -85,9 +85,9 @@ $classe = [
         $mediaVoti = $sommaVoti / $numVoti;
       ?>
 
-        <ul>
-          <li class="bg-success p-2 text-white">
-            <?php echo "{$studente['nome']} {$studente['cognome']}" . ': ' . $mediaVoti ?>
+        <ul class="bg-success p-2 text-white">
+          <li>
+            <?php echo $studente['nome'] . ' ' . $studente['cognome'] . ' Media: ' . $mediaVoti ?>
           </li>
         </ul>
 
