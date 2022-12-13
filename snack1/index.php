@@ -27,7 +27,7 @@ Olimpia Milano - Cantù | 55-60 -->
     ];
 
     for( $i=0; $i < count($partite); $i++){
-      echo $partite[$i]['squadraCasa']. '(' . $partite[$i]['puntiCasa'] . ')' .  '-' . $partite[$i]['squadraOspite'] . '(' . $partite[$i]['puntiOspite'] . ')';
+      echo $partite[$i]['squadraCasa']. ' - ' . $partite[$i]['squadraOspite'] . ' | ' . $partite[$i]['puntiCasa'] . '-' . $partite[$i]['puntiOspite'] . ' ';
     };
 
 ?>
