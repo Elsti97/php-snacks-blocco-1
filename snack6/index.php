@@ -53,7 +53,7 @@ $db = [
       ?>
         <div class="bg-secondary p-3 text-white">
           <?php
-          echo "{$teacher['name']} {$teacher['lastname']}"
+          echo $teacher['name'] . ' ' . $teacher['lastname']
           ?>
         </div>
       <?php
@@ -68,7 +68,7 @@ $db = [
       ?>
         <div class="bg-danger p-3">
           <?php
-          echo "{$pm['name']} {$teacher['lastname']}"
+          echo $pm['name'] . ' ' . $teacher['lastname'];
           ?>
         </div>
       <?php
