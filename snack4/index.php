@@ -9,6 +9,10 @@ while (count($arrayNumerico) < 15) {
   if (!in_array($numRandom, $arrayNumerico))
     $arrayNumerico[] = $numRandom;
 }
-var_dump($arrayNumerico);
-print_r($arrayNumerico);
+// var_dump($arrayNumerico);
+// print_r($arrayNumerico);
+echo '<h2>Numeri:</h2>';
+foreach($arrayNumerico as $numeriColonna){
+  echo "<ul><li>{$numeriColonna}</li></ul>";
+}
 ?>
