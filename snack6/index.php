@@ -68,7 +68,7 @@ $db = [
       ?>
         <div class="bg-danger p-3">
           <?php
-          echo $pm['name'] . ' ' . $teacher['lastname'];
+          echo $pm['name'] . ' ' . $pm['lastname'];
           ?>
         </div>
       <?php
